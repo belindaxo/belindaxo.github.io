@@ -1,0 +1,89 @@
+@import url(https://fonts.googleapis.com/css?family=Fira+Code);
+/* Variables */
+:root {
+    --font-family: "Fira Code";
+    --light-font: 300;
+    --regular-font: 400;
+    --medium-font: 500;
+    --semibold-font: 600;
+    --bold-font: 700;
+    --bolder-font: 900;
+    --bg-color: #2a2a40;
+    --primary-color: #f8f8f2;
+    --secondary-color: #ff9bec;
+    --bottom-margin: 0.5rem;
+    --bottom-margin-2: 1rem;
+    --line-height: 1.7rem;
+    --transition: 0.3s
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    text-decoration: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+a:hover {
+    color: var(--secondary-color);
+}
+
+body {
+    font-family: var(--font-family);
+}
+
+nav {
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 3.5rem;
+    background-color: var(--bg-color);
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav h1 {
+    color: var(--secondary-color);
+    font-weight: var(--bold-font);
+    font-size: 2rem;
+}
+
+nav a {
+    color: var(--primary-color);
+    transition: var(--transition);
+}
+
+nav a:hover {
+    color: var(--secondary-color);
+    border-bottom: 2px solid var(--secondary-color);
+}
+
+nav ul {
+    display: flex;
+    gap: 1.9rem;
+    list-style-type: none;
+}
+
+nav ul li {
+    font-weight: var(--semibold-font);
+}
+
+.burger-menu {
+    color: var(--primary-color);
+    font-size: 2rem;
+    border: 0;
+    background-color: transparent;
+    cursor: pointer;
+    display: none;
+}
